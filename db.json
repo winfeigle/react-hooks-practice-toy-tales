@@ -1,12 +1,6 @@
 {
   "toys": [
     {
-      "id": 1,
-      "name": "Woody",
-      "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
-      "likes": 8
-    },
-    {
       "id": 2,
       "name": "Buzz Lightyear",
       "image": "http://www.pngmart.com/files/6/Buzz-Lightyear-PNG-Transparent-Picture.png",
@@ -23,12 +17,6 @@
       "name": "Slinky Dog",
       "image": "https://www.freeiconspng.com/uploads/slinky-png-transparent-1.png",
       "likes": 4
-    },
-    {
-      "id": 5,
-      "name": "Rex",
-      "image": "https://i5.walmartimages.com/asr/b90f6f5a-663c-4263-8770-38adad495a23_1.e45d8d4f32cdf949eaa0bf57753f0b27.jpeg",
-      "likes": 1
     },
     {
       "id": 6,
