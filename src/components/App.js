@@ -31,6 +31,20 @@ function App() {
     })
   }
 
+  const handleUpdateToy = (updatedToy) => {
+    const updatedToys = toys.map(toy => {
+      //If the toy in the array has the same id as the updated toy then replace the old toy with the new toy, this will update the like count from ToyCard.js:
+      if(toy.id === updatedToy.id){
+        return updatedToy;
+      } else {
+        //Otherwise just return the toy;
+        return toy;
+      }
+    })
+    //this re-renders the likecount because state is changing
+    setToys(updatedToys);
+  }
+
   return (
     <>
       <Header />
@@ -38,7 +52,11 @@ function App() {
       <div className="buttonContainer">
         <button onClick={handleClick}>Add a Toy</button>
       </div>
-      <ToyContainer toys={toys} onDeleteToy={onDeleteToy}/>
+      <ToyContainer 
+        toys={toys} 
+        onDeleteToy={onDeleteToy}
+        onUpdatedToy={handleUpdateToy}
+        />
     </>
   );
 }
